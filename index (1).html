@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ============================================================
+       SAGAR SRINIVASA — PERSONAL PORTFOLIO
+       To edit: search for "EDIT:" comments throughout the file
+       ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- EDIT: Change page title and SEO meta tags below -->
+  <title>Sagar Srinivasa | AI & ML Developer Portfolio</title>
+  <meta name="description" content="Sagar Srinivasa – BE Computer Science (AI & ML) student at PMC Tech, Chennai. Developer, problem-solver, and AI enthusiast." />
+  <meta name="keywords" content="Sagar Srinivasa, AI ML developer, portfolio, Python, web developer, Chennai, PMC Tech" />
+  <meta name="author" content="Sagar Srinivasa" />
+
+  <!-- Open Graph (for sharing on social media) -->
+  <meta property="og:title" content="Sagar Srinivasa | Portfolio" />
+  <meta property="og:description" content="Intuition never lies. AI & ML developer based in Chennai." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon placeholder (add your own icon in assets/) -->
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+
+  <!-- Google Fonts: Syne (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <!-- Iconify icons (replaces Font Awesome, loads on-demand) -->
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===================== BACK-TO-TOP BUTTON ===================== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <iconify-icon icon="mdi:chevron-up" width="24"></iconify-icon>
+  </button>
+
+  <!-- ========================== NAVBAR =========================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+
+      <!-- EDIT: Change your logo/name here -->
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Sagar<span class="logo-dot">.</span><span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop nav links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"          class="nav-link">Home</a></li>
+        <li><a href="#about"         class="nav-link">About</a></li>
+        <li><a href="#skills"        class="nav-link">Skills</a></li>
+        <li><a href="#education"     class="nav-link">Education</a></li>
+        <li><a href="#projects"      class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#contact"       class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Hamburger for mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========================= HERO SECTION ====================== -->
+  <section class="hero" id="home">
+
+    <!-- Decorative animated grid -->
+    <div class="hero-grid"></div>
+
+    <!-- Floating orbs (CSS animated) -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="hero-content reveal">
+      <p class="hero-greeting">Hello, world! — I'm</p>
+
+      <!-- EDIT: Your full name -->
+      <h1 class="hero-name">Sagar <span class="name-accent">Srinivasa</span></h1>
+
+      <!-- Typing animation — EDIT roles in script.js typingRoles array -->
+      <p class="hero-typing">
+        I'm a <span class="typing-text" id="typingText"></span><span class="cursor">|</span>
+      </p>
+
+      <!-- EDIT: Your tagline / bio -->
+      <p class="hero-bio">"Intuition never lies."</p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact"  class="btn btn-ghost">Get In Touch</a>
+      </div>
+
+      <!-- Social icons in hero -->
+      <div class="hero-socials">
+        <!-- EDIT: Replace # with your actual profile URLs -->
+        <a href="https://github.com/"    target="_blank" rel="noopener" aria-label="GitHub">
+          <iconify-icon icon="mdi:github" width="22"></iconify-icon>
+        </a>
+        <a href="https://linkedin.com/"  target="_blank" rel="noopener" aria-label="LinkedIn">
+          <iconify-icon icon="mdi:linkedin" width="22"></iconify-icon>
+        </a>
+        <a href="https://twitter.com/"   target="_blank" rel="noopener" aria-label="Twitter">
+          <iconify-icon icon="mdi:twitter" width="22"></iconify-icon>
+        </a>
+        <a href="mailto:sagarvsrinivasa6259@g.mail.com" aria-label="Email">
+          <iconify-icon icon="mdi:email-outline" width="22"></iconify-icon>
+        </a>
+      </div>
+    </div>
+
+    <!-- Profile image / avatar card -->
+    <div class="hero-avatar reveal">
+      <div class="avatar-ring">
+        <div class="avatar-inner">
+          <!-- EDIT: Replace with your photo → assets/profile.jpg -->
+          <div class="avatar-placeholder">
+            <iconify-icon icon="mdi:account" width="90" class="avatar-icon"></iconify-icon>
+          </div>
+        </div>
+      </div>
+      <div class="avatar-badge">
+        <iconify-icon icon="mdi:lightning-bolt" width="14"></iconify-icon> Available for Internship
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">
+      <span class="scroll-hint-line"></span>
+      <iconify-icon icon="mdi:chevron-down" width="20"></iconify-icon>
+    </a>
+  </section>
+
+  <!-- ========================= ABOUT SECTION ==================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Get to know me</p>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <!-- Left: Info card -->
+        <div class="about-card glass-card reveal">
+          <div class="about-info-row">
+            <iconify-icon icon="mdi:account-circle-outline" width="20" class="info-icon"></iconify-icon>
+            <!-- EDIT: Your details -->
+            <span><strong>Name:</strong> Sagar Srinivasa</span>
+          </div>
+          <div class="about-info-row">
+            <iconify-icon icon="mdi:emoticon-cool-outline" width="20" class="info-icon"></iconify-icon>
+            <span><strong>Nickname:</strong> Jack</span>
+          </div>
+          <div class="about-info-row">
+            <iconify-icon icon="mdi:map-marker-outline" width="20" class="info-icon"></iconify-icon>
+            <span><strong>Location:</strong> Chennai, Tamil Nadu, India</span>
+          </div>
+          <div class="about-info-row">
+            <iconify-icon icon="mdi:email-outline" width="20" class="info-icon"></iconify-icon>
+            <span><strong>Email:</strong> sagarvsrinivasa6259@g.mail.com</span>
+          </div>
+          <div class="about-info-row">
+            <iconify-icon icon="mdi:phone-outline" width="20" class="info-icon"></iconify-icon>
+            <span><strong>Phone:</strong> +91 9042563751</span>
+          </div>
+          <div class="about-info-row">
+            <iconify-icon icon="mdi:school-outline" width="20" class="info-icon"></iconify-icon>
+            <span><strong>Degree:</strong> BE CSE (AI & ML)</span>
+          </div>
+
+          <!-- EDIT: Your resume PDF → assets/resume.pdf -->
+          <a href="assets/resume.pdf" download class="btn btn-primary btn-full" style="margin-top: 1.5rem;">
+            <iconify-icon icon="mdi:download-outline" width="18"></iconify-icon>
+            Download Résumé
+          </a>
+        </div>
+
+        <!-- Right: Bio text -->
+        <div class="about-text reveal">
+          <h3 class="about-heading">Who am I?</h3>
+          <!-- EDIT: Your bio paragraphs -->
+          <p>
+            I'm <strong>Sagar Srinivasa</strong> (aka <strong>Jack</strong>), a first-year
+            <strong>BE Computer Science & Engineering (AI &amp; ML)</strong> student at
+            <strong>PMC Tech, Chennai</strong>. I believe that <em>"Intuition never lies"</em> —
+            a principle that guides both my creative decisions and technical problem-solving.
+          </p>
+          <p style="margin-top:1rem;">
+            I'm passionate about exploring the intersection of <strong>Artificial Intelligence</strong>,
+            <strong>Machine Learning</strong>, and <strong>web development</strong>.
+            Whether it's training models, building interactive UIs, or solving algorithmic puzzles,
+            I approach every challenge with curiosity and drive.
+          </p>
+          <p style="margin-top:1rem;">
+            Currently on a journey from <strong>2025 to 2029</strong>, I'm building a strong
+            foundation in Python, AI/ML, and full-stack development — aiming to create technology
+            that genuinely makes a difference.
+          </p>
+
+          <!-- Quick stat cards -->
+          <div class="about-stats">
+            <div class="stat-chip">
+              <span class="stat-num">7+</span>
+              <span class="stat-lbl">Skills</span>
+            </div>
+            <div class="stat-chip">
+              <span class="stat-num">4</span>
+              <span class="stat-lbl">Projects</span>
+            </div>
+            <div class="stat-chip">
+              <span class="stat-num">∞</span>
+              <span class="stat-lbl">Curiosity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= SKILLS SECTION =================== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">What I work with</p>
+        <h2 class="section-title">My <span class="accent">Skills</span></h2>
+      </div>
+
+      <!-- Skill bars -->
+      <!-- EDIT: Change skill names and percentage values -->
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <iconify-icon icon="mdi:code-tags" width="20"></iconify-icon> Technical Skills
+          </h3>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span class="skill-name">
+                <iconify-icon icon="logos:python" width="18"></iconify-icon> Python
+              </span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="80"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span class="skill-name">
+                <iconify-icon icon="logos:html-5" width="18"></iconify-icon> HTML
+              </span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="85"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span class="skill-name">
+                <iconify-icon icon="logos:css-3" width="18"></iconify-icon> CSS
+              </span>
+              <span class="skill-pct">78%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="78"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span class="skill-name">
+                <iconify-icon icon="logos:javascript" width="18"></iconify-icon> JavaScript
+              </span>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="70"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span class="skill-name">
+                <iconify-icon icon="mdi:brain" width="18"></iconify-icon> AI &amp; ML
+              </span>
+              <span class="skill-pct">65%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="65"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <iconify-icon icon="mdi:account-group-outline" width="20"></iconify-icon> Soft Skills
+          </h3>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span class="skill-name">
+                <iconify-icon icon="mdi:puzzle-outline" width="18"></iconify-icon> Problem Solving
+              </span>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="90"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span class="skill-name">
+                <iconify-icon icon="mdi:message-outline" width="18"></iconify-icon> Communication
+              </span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="85"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill tag cloud -->
+      <div class="skill-tags reveal">
+        <!-- EDIT: Add/remove tags as needed -->
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">HTML5</span>
+        <span class="skill-tag">CSS3</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">AI &amp; ML</span>
+        <span class="skill-tag">Problem Solving</span>
+        <span class="skill-tag">Communication</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">VS Code</span>
+        <span class="skill-tag">Google Colab</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== EDUCATION SECTION ================= -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Academic journey</p>
+        <h2 class="section-title">My <span class="accent">Education</span></h2>
+      </div>
+
+      <div class="timeline">
+
+        <!-- EDIT: Add/remove timeline items -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-badge">Current</span>
+            <h3 class="timeline-title">BE Computer Science &amp; Engineering (AI &amp; ML)</h3>
+            <p class="timeline-place">
+              <iconify-icon icon="mdi:school-outline" width="16"></iconify-icon>
+              PMC Tech, Chennai, Tamil Nadu
+            </p>
+            <p class="timeline-date">
+              <iconify-icon icon="mdi:calendar-range" width="16"></iconify-icon>
+              2025 – 2029
+            </p>
+            <p class="timeline-desc">
+              Pursuing a comprehensive engineering degree with specialization in Artificial Intelligence
+              and Machine Learning. Focus areas include deep learning, data science, Python programming,
+              and software engineering principles.
+            </p>
+            <div class="timeline-tags">
+              <span>AI &amp; ML</span><span>Python</span><span>Data Science</span><span>Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <h3 class="timeline-title">Higher Secondary School (12th Grade)</h3>
+            <p class="timeline-place">
+              <iconify-icon icon="mdi:school-outline" width="16"></iconify-icon>
+              <!-- EDIT: Your school name -->
+              School Name, Tamil Nadu
+            </p>
+            <p class="timeline-date">
+              <iconify-icon icon="mdi:calendar-range" width="16"></iconify-icon>
+              2024 – 2025
+            </p>
+            <p class="timeline-desc">
+              <!-- EDIT: Your 12th grade details -->
+              Completed higher secondary education with Computer Science as a core subject,
+              building a strong foundation in mathematics and programming fundamentals.
+            </p>
+            <div class="timeline-tags">
+              <span>Computer Science</span><span>Mathematics</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== PROJECTS SECTION ================== -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Things I've built</p>
+        <h2 class="section-title">My <span class="accent">Projects</span></h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- EDIT: Replace with your real projects. Duplicate this card for more. -->
+
+        <div class="project-card glass-card reveal">
+          <div class="project-header">
+            <div class="project-icon-wrap">
+              <iconify-icon icon="mdi:brain" width="28" class="project-icon"></iconify-icon>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener" aria-label="GitHub">
+                <iconify-icon icon="mdi:github" width="20"></iconify-icon>
+              </a>
+              <a href="#" target="_blank" rel="noopener" aria-label="Live Demo">
+                <iconify-icon icon="mdi:open-in-new" width="20"></iconify-icon>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">AI Image Classifier</h3>
+          <p class="project-desc">
+            A convolutional neural network trained to classify images into 10 categories
+            using Python and TensorFlow/Keras. Achieves high accuracy on test data with
+            a simple, clean inference pipeline.
+          </p>
+          <div class="project-tags">
+            <span>Python</span><span>TensorFlow</span><span>CNN</span><span>AI &amp; ML</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal">
+          <div class="project-header">
+            <div class="project-icon-wrap">
+              <iconify-icon icon="mdi:weather-sunny" width="28" class="project-icon"></iconify-icon>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener" aria-label="GitHub">
+                <iconify-icon icon="mdi:github" width="20"></iconify-icon>
+              </a>
+              <a href="#" target="_blank" rel="noopener" aria-label="Live Demo">
+                <iconify-icon icon="mdi:open-in-new" width="20"></iconify-icon>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Weather Dashboard</h3>
+          <p class="project-desc">
+            A responsive weather app built with HTML, CSS, and JavaScript that fetches
+            real-time weather data from the OpenWeatherMap API and displays forecasts
+            with animated icons.
+          </p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>API</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal">
+          <div class="project-header">
+            <div class="project-icon-wrap">
+              <iconify-icon icon="mdi:robot-outline" width="28" class="project-icon"></iconify-icon>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener" aria-label="GitHub">
+                <iconify-icon icon="mdi:github" width="20"></iconify-icon>
+              </a>
+              <a href="#" target="_blank" rel="noopener" aria-label="Live Demo">
+                <iconify-icon icon="mdi:open-in-new" width="20"></iconify-icon>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Python Chatbot</h3>
+          <p class="project-desc">
+            A rule-based chatbot implemented in Python that responds to user queries
+            using NLP basics. Includes intent classification and a clean terminal
+            interface for interaction.
+          </p>
+          <div class="project-tags">
+            <span>Python</span><span>NLP</span><span>Chatbot</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal">
+          <div class="project-header">
+            <div class="project-icon-wrap">
+              <iconify-icon icon="mdi:web" width="28" class="project-icon"></iconify-icon>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener" aria-label="GitHub">
+                <iconify-icon icon="mdi:github" width="20"></iconify-icon>
+              </a>
+              <a href="#" target="_blank" rel="noopener" aria-label="Live Demo">
+                <iconify-icon icon="mdi:open-in-new" width="20"></iconify-icon>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Portfolio Website</h3>
+          <p class="project-desc">
+            This very portfolio! Built from scratch using pure HTML, CSS, and vanilla
+            JavaScript with glassmorphism design, smooth animations, scroll reveals,
+            and a fully responsive layout.
+          </p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Design</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== CERTIFICATIONS SECTION ================= -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Credentials &amp; learning</p>
+        <h2 class="section-title">My <span class="accent">Certifications</span></h2>
+      </div>
+
+      <div class="cert-grid">
+
+        <!-- EDIT: Add your actual certifications -->
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon-wrap">
+            <iconify-icon icon="mdi:certificate-outline" width="32" class="cert-icon"></iconify-icon>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Python for Everybody</h3>
+            <p class="cert-issuer">
+              <iconify-icon icon="mdi:domain" width="14"></iconify-icon> Coursera / University of Michigan
+            </p>
+            <p class="cert-date">
+              <iconify-icon icon="mdi:calendar" width="14"></iconify-icon> 2025
+            </p>
+          </div>
+          <a href="#" target="_blank" rel="noopener" class="cert-link">
+            View <iconify-icon icon="mdi:open-in-new" width="14"></iconify-icon>
+          </a>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon-wrap">
+            <iconify-icon icon="mdi:certificate-outline" width="32" class="cert-icon"></iconify-icon>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Introduction to AI</h3>
+            <p class="cert-issuer">
+              <iconify-icon icon="mdi:domain" width="14"></iconify-icon> IBM / edX
+            </p>
+            <p class="cert-date">
+              <iconify-icon icon="mdi:calendar" width="14"></iconify-icon> 2025
+            </p>
+          </div>
+          <a href="#" target="_blank" rel="noopener" class="cert-link">
+            View <iconify-icon icon="mdi:open-in-new" width="14"></iconify-icon>
+          </a>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon-wrap">
+            <iconify-icon icon="mdi:certificate-outline" width="32" class="cert-icon"></iconify-icon>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Responsive Web Design</h3>
+            <p class="cert-issuer">
+              <iconify-icon icon="mdi:domain" width="14"></iconify-icon> freeCodeCamp
+            </p>
+            <p class="cert-date">
+              <iconify-icon icon="mdi:calendar" width="14"></iconify-icon> 2025
+            </p>
+          </div>
+          <a href="#" target="_blank" rel="noopener" class="cert-link">
+            View <iconify-icon icon="mdi:open-in-new" width="14"></iconify-icon>
+          </a>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon-wrap">
+            <iconify-icon icon="mdi:certificate-outline" width="32" class="cert-icon"></iconify-icon>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Machine Learning Fundamentals</h3>
+            <p class="cert-issuer">
+              <iconify-icon icon="mdi:domain" width="14"></iconify-icon> Google / Kaggle
+            </p>
+            <p class="cert-date">
+              <iconify-icon icon="mdi:calendar" width="14"></iconify-icon> 2025
+            </p>
+          </div>
+          <a href="#" target="_blank" rel="noopener" class="cert-link">
+            View <iconify-icon icon="mdi:open-in-new" width="14"></iconify-icon>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CONTACT SECTION =================== -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Let's connect</p>
+        <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Left: contact info -->
+        <div class="contact-info reveal">
+          <p class="contact-intro">
+            I'm open to internships, collaborations, and interesting conversations. 
+            Whether you have a project idea, a question, or just want to say hello — 
+            drop me a message!
+          </p>
+
+          <div class="contact-details">
+            <!-- EDIT: Your contact info -->
+            <a href="mailto:sagarvsrinivasa6259@g.mail.com" class="contact-detail-row">
+              <div class="contact-detail-icon">
+                <iconify-icon icon="mdi:email-outline" width="20"></iconify-icon>
+              </div>
+              <div>
+                <p class="contact-detail-label">Email</p>
+                <p class="contact-detail-value">sagarvsrinivasa6259@g.mail.com</p>
+              </div>
+            </a>
+
+            <a href="tel:+919042563751" class="contact-detail-row">
+              <div class="contact-detail-icon">
+                <iconify-icon icon="mdi:phone-outline" width="20"></iconify-icon>
+              </div>
+              <div>
+                <p class="contact-detail-label">Phone</p>
+                <p class="contact-detail-value">+91 9042563751</p>
+              </div>
+            </a>
+
+            <div class="contact-detail-row">
+              <div class="contact-detail-icon">
+                <iconify-icon icon="mdi:map-marker-outline" width="20"></iconify-icon>
+              </div>
+              <div>
+                <p class="contact-detail-label">Location</p>
+                <p class="contact-detail-value">Chennai, Tamil Nadu, India</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social links -->
+          <div class="contact-socials">
+            <p class="contact-social-title">Find me on</p>
+            <div class="social-icons">
+              <!-- EDIT: Replace # with your profile URLs -->
+              <a href="https://github.com/"   target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
+                <iconify-icon icon="mdi:github" width="22"></iconify-icon>
+              </a>
+              <a href="https://linkedin.com/" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+                <iconify-icon icon="mdi:linkedin" width="22"></iconify-icon>
+              </a>
+              <a href="https://twitter.com/"  target="_blank" rel="noopener" class="social-icon" aria-label="Twitter">
+                <iconify-icon icon="mdi:twitter" width="22"></iconify-icon>
+              </a>
+              <a href="https://instagram.com/" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
+                <iconify-icon icon="mdi:instagram" width="22"></iconify-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: contact form -->
+        <div class="contact-form-wrap glass-card reveal">
+          <!-- EDIT: To make the form functional, connect it to Formspree/EmailJS/Web3Forms -->
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="e.g. Priya Sharma" required />
+              <span class="form-error" id="nameError">Please enter your name.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              <span class="form-error" id="emailError">Please enter a valid email.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+              <span class="form-error" id="subjectError">Please enter a subject.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message here…" required></textarea>
+              <span class="form-error" id="messageError">Please write a message.</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              <iconify-icon icon="mdi:send-outline" width="18"></iconify-icon>
+              Send Message
+            </button>
+
+            <p class="form-success" id="formSuccess">
+              <iconify-icon icon="mdi:check-circle-outline" width="18"></iconify-icon>
+              Message sent successfully! I'll reply soon.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FOOTER ======================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>Sagar<span class="logo-dot">.</span><span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-tagline">"Intuition never lies."</p>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <!-- EDIT: Year updates automatically via JS -->
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Sagar Srinivasa. Crafted with
+          <iconify-icon icon="mdi:heart" width="14" style="color:var(--accent);"></iconify-icon>
+          in Chennai.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JS -->
+  <script src="script.js"></script>
+</body>
+</html>
